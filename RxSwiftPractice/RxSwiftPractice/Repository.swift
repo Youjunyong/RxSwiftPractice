@@ -16,9 +16,7 @@ struct Repository: Decodable {
     
     enum CodingKeys: String, CodingKey{
         case id, name, description, language
-        // api Json 그대로 사용
         case stargazersCount = "stargazers_count"
-        // api Json에는 stargazers_count로 되어있어서..
     }
 }
 
